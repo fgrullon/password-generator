@@ -1,0 +1,37 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="hero">
+            <h1 class="title">Generate a <br><span>random password</span></h1>
+            <p class="legend">Never use an insecure password again.</p>
+            <div class="parameters">
+                <button class="generate-btn">Generate passwords</button>
+                <div class="range-display">
+                    <input id="range" type="range" value="10" min="10" max="16" oninput="this.nextElementSibling.value = this.value">
+                    <output class="range-value" >10</output>
+                </div>
+  
+            </div>
+            <div>
+                <div class="extras">
+                    <h2>Include</h2>
+                    <div>
+                        <input type="checkbox" id="includeNumbers" name="numbers" checked />
+                        <label for="numbers">Number</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="includeSymbols" name="symbols" checked />
+                        <label for="symbols">Symbols</label>
+                    </div>
+                </div>
+            </div>
+            <div class="display">
+                <div class="displayPassword" id="passwordOne"></div>
+                <div class="displayPassword" id="passwordTwo"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
